@@ -236,8 +236,8 @@
         </div>
         <!----end imagenes para celulares-->
         <br><br>
-        <div class="col-auto p-5 text-center" style="background-color: #4b42bf">
-                
+        <div class="col-auto p-5 text-rigth" style="background-color: #4b42bf">
+               <h4 style="color:white;">Conoce mas acerca de <a href="https://www.evolucion.co/" style="text-decoration:none; color:#eba506;">Evolución</a></h4> 
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
