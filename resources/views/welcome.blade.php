@@ -40,10 +40,10 @@
         <!-- Navigation-->
        
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" style="padding-top: 2em;">
             <!---#######################text-start-->
-            <div class="container-fluid" style="margin-top:8%;">
-            <div class="row">
+            <div class="container-fluid" style="margin-top:10%;">
+            <div class="row" style="padding-top: 2em;">
                 <div class="col-lg-7">
                     <div class="container-fluid">
                         <div class="align-items-center">
@@ -64,8 +64,8 @@
                 <div class="container align-items-center">
                     <h1 class="text-white font-weight-bold" ><font color="#eba506" id="titulo" size="6">INSCRIBETE</font></h1>
                     @if(Session::has('mensaje'))
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>{{Session::get('mensaje')}}</strong> 
+                    <div class="alert alert-dismissible fade show" role="alert" style="background-color:#66efa5;">
+                    <strong>&nbsp;{{Session::get('mensaje')}}</strong> 
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     @endif
@@ -75,31 +75,31 @@
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                          <input type="text" class="form-control" id="lastname" name="nombre" placeholder="Nombre" required>
+                          <input type="text" class="form-control" id="lastname" name="nombre" placeholder="Nombre" autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-building"></i></span>
-                          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa" required>
+                          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-briefcase-fill"></i></span>
-                          <input type="text" class="form-control" id="cargo"  name="cargo" placeholder="Cargo" required>
+                          <input type="text" class="form-control" id="cargo"  name="cargo" placeholder="Cargo"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                          <input type="text" class="form-control" id="correo" name="correo" placeholder="correo@example.com" required>
+                          <input type="text" class="form-control" id="correo" name="correo" placeholder="correo@example.com"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                          <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
+                          <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-12">
@@ -119,18 +119,26 @@
          <!-- Content section 2-->
          <section id="about">
             <div class="container px-2">
-                <div class="row gx-3 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src=" {{ asset('dist/assets/img/portfolio/landin_meta_05.jpg')}}" alt="..." /></div>
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-5">
+                        <img class="img-fluid rounded-circle" src=" {{ asset('dist/assets/img/portfolio/landin_meta_05.jpg')}}" alt="..." />
                     </div>                                                               
-                    <div class="col-lg-6">
-                        <div class="p-5">
+                    <div class="col-lg-7">
+                           <br><br>
+                           <div class="container-flex" style="padding-left:1em; padding-right:1em;">
                             <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6">Facilitador:</font></h1>
                             <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6">Manuel Castrillón</font></h1>
-                            <h6><font color="#a5a38f">MBA (Maestría Administración de Empresas)</font></h6>
-                            <h6><font color="#a5a38f">Especialista en Mercadeo y Gamificación</font></h6>
-                            <h6><font color="#a5a38f">Ingeniero de Sistemas</font></h6>
-                        </div>
+                            <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>MBA (Maestría Administración de Empresas)</b></h6>
+                            <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>Especialista en Mercadeo y Gamificación</b></h6>
+                            <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>Ingeniero de Sistemas</b></h6>
+                            <br>
+                            <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>Con más de 12 años de experiencia en el mundo del diseño de experiencias de aprendizaje y la gamificación para el mundo corporativo, Manuel y su equipo han preparado un evento completamente disruptivo e inversivo para que lo disfrutes dentro de un METAVERSO.</b>
+                            </h6> 
+                             <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;">
+                             <b> El evento servirá para abrirnos la mente y conectar todo lo que necesitas saber para aplicar la tecnología en sus empresas, en espacios formativos diferentes, ferias de negocios virtuales o hibridas y/o espacios de trabajo en equipo y relacionamiento para crear grupos primarios diferentes.</b>
+                             </h6> <br>
+                            <h5>¡Te esperamos!</h5>
+                           </div>
                     </div>
                 </div>
             </div>
@@ -146,17 +154,40 @@
         </section>
         <!-- Portfolio-->
         <div class="container col-auto p-2 text-center">
-            <video autoplay controls style="width:50%; height: 50%; margin-right: 6px; margin-bottom: 10px;">
-              <source src="https://www.youtube.com/embed/ABM5UJeILjo" type="video/mp4">
-            </video> 
-            <br><br>
+          <!---pantallas grandes-->
+          <div class="container d-none d-sm-none d-md-block" style="padding-left: 5em; padding-right: 5em;">
+              <div class="video-responsive">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/6ZCIEgBdGIA" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <br><br><br>
+         </div>
+         <!---pantallas pequeñas-->
+         <div class="container d-sm-block d-block d-sm-block d-md-none">
+              <div class="video-responsive">
+                <iframe width="400" height="200"  style="padding-top: 3em; padding-bottom: 3em;"
+                    src="https://www.youtube.com/embed/6ZCIEgBdGIA" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+         </div>
+         <!--end pantallas pequeñas-->
             <div class="row">
                 <div class="col-lg-8">
                     <div class="container px-4 px-lg-5 h-100">
                         <div class="text-start">
+                          <br>
                             <div class="col-lg-8 align-self-end">
                                 <h1 class="font-weight-bold"><font color="#4b42bf" id="titulo">Contenido:</font></h1>
-                                <br>
+                               <br>
                               </div>
                             <div class="justify-content-left">
                                 <h5 style="font-family: Open Sans; font-size: 113%; text-align:justify;"><b>¿Qué son y cuáles</b> son sus aplicabilidades para las empresas, universidades, camaras de comercio </h5>
@@ -183,31 +214,31 @@
                       <div class="col-lg-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                          <input type="text" class="form-control" id="lastname" name="nombre" placeholder="Nombre" required>
+                          <input type="text" class="form-control" id="lastname" name="nombre" placeholder="Nombre"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-building"></i></span>
-                          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa"required>
+                          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-briefcase-fill"></i></span>
-                          <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo" required>
+                          <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                          <input type="text" class="form-control" id="correo" name="correo" placeholder="correo@example.com" required>
+                          <input type="text" class="form-control" id="correo" name="correo" placeholder="correo@example.com"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                          <input type="text" class="form-control" id="telefono"  name="telefono" placeholder="Telefono" required>
+                          <input type="text" class="form-control" id="telefono"  name="telefono" placeholder="Telefono"  autocomplete="off" required>
                         </div>
                       </div>
                       <br>
@@ -248,5 +279,23 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <style>
+          /* Start: Video Responsive */
+            .video-responsive {
+                overflow:hidden;
+                padding-bottom:450px; /* Adecua este valor para controlar la altura del video */
+                position:relative;
+                height:0;
+            }
+
+            .video-responsive iframe{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+            /* End: Video Responsive */
+        </style>
+      </body>
 </html>

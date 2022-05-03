@@ -24,7 +24,7 @@ class PersonasController extends Controller
             $category->correo = $request->input('correo');
             $category->telefono = $request->input('telefono');
             $category->save();
-            Session::flash('mensaje','Registro exitoso! Invita a otra persona a registrarse');
+            Session::flash('mensaje','Registro exitoso! Invita a otra persona al evento');
         }
         return back();
     }
