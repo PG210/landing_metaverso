@@ -201,8 +201,10 @@
                             </div>
                             <br>
                             <div style="line-height: 35px">
-                             <p style="text-align: justify; font-size: 20px;">Próximamente te estaremos informando los pasos para que crees tu avatar e instales los accesos al metaverso y de esta manera tengas todo listo para el evento.</p>
-                                <img style='display:block;margin-left: auto; margin-right: auto;' src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/landin_meta_05.jpg')}}"/>
+                             <p style="text-align: justify; font-size: 20px;">
+                              Eres importante para nosostros, por eso te recordamos la asistencia al evento, no faltes te esperamos.
+                            </p>
+                                <img style='display:block;margin-left: auto; margin-right: auto;' src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/bienvenida.jpg')}}"/>
                             </div>
                         </td>
                     </tr>
@@ -243,11 +245,7 @@
                         <td height="25" style="font-size: 20px; line-height: 25px;">
                         Fecha: 18 de mayo <br>
                         Hora: 8 Am - 10 AM <br><br>
-                        <p style="text-align: center;">Reserva ese espacio desde YA !</p><br>
-                        <div style="text-align: center;">
-                         <a href="#" type="button" class="button button2" >Agregar</a>
-                        </div>
-                       
+                        <p style="text-align: center;">Reserva ese espacio desde YA !</p><br>                       
                        </td>
                     </tr>
 
