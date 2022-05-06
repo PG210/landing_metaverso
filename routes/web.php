@@ -15,7 +15,8 @@ use App\Http\Controllers\PersonasController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
+    //return view('email.nuevo-usuario');
 });
 
 Route::get('/dashboard', function () {
@@ -24,5 +25,6 @@ Route::get('/dashboard', function () {
 
 Route::post('/registro/inscripcion', [PersonasController::class, 'info'])->name('datos');
 Route::get('/registro/inscripcion/descargar', [PersonasController::class, 'exportExcel'])->name('descarga');
+Route::get('/registro/inscripcion/recordar', [PersonasController::class, 'recordarevento'])->name('recordar');
 
 require __DIR__.'/auth.php';
