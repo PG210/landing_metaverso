@@ -203,8 +203,8 @@
                             <div style="line-height: 35px">
                              <p style="text-align: justify; font-size: 20px;">
                               Eres importante para nosostros, por eso te recordamos la asistencia al evento, no faltes te esperamos.
-                            </p>
-                                <img style='display:block;margin-left: auto; margin-right: auto;' src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/bienvenida.jpg')}}"/>
+                            </p><br>
+                                <img style="display:block;margin-left: auto; margin-right: auto; height: 700px; width: 600px;" src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/bienvenida.jpg')}}"/>
                             </div>
                         </td>
                     </tr>

@@ -42,7 +42,7 @@
         <!-- Masthead-->
         <header class="masthead" style="padding-top: 2em;">
             <!---#######################text-start-->
-            <div class="container-fluid" style="margin-top:10%;">
+            <div class="container-fluid" style="margin-top:8%;">
             <div class="row" style="padding-top: 2em;">
                 <div class="col-lg-7">
                     <div class="container-fluid">
@@ -62,20 +62,44 @@
                 <div class="col-lg-5">
                 <div class="container-fluid">
                 <div class="container align-items-center">
-                    <h1 class="text-white font-weight-bold" ><font color="#eba506" id="titulo" size="6">INSCRIBETE</font></h1>
-                    @if(Session::has('mensaje'))
-                    <div class="alert alert-dismissible fade show" role="alert" style="background-color:#66efa5;">
-                    <strong>&nbsp;{{Session::get('mensaje')}}</strong> 
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                    <h1 class="text-white font-weight-bold"><font color="#eba506" id="titulo" size="6">INSCRIBETE</font></h1>
+                    @if($m==1)
+                      <div class="alert alert-dismissible fade show" role="alert" style="background-color:#FFFC33;">
+                        <strong>&nbsp;Usuario ya se encuentra registrado</strong> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
                     @endif
-
-                    <form class="row g-2 needs-validation align-items-center" action="{{route('datos')}}" method="post">
+                    @if($var!=0)
+                      @if(isset($var['error']['code']))
+                        <div class="alert alert-dismissible fade show" role="alert" style="background-color:#FFFC33;">
+                        <strong>&nbsp;Usuario ya se encuentra registrado</strong> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                      @endif
+                      @if(isset($var['result']))
+                          <div class="alert alert-dismissible fade show" role="alert" style="background-color:#66efa5;">
+                          <strong>&nbsp;Usuario registrado con éxito</strong> 
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                      @endif
+                    @endif
+                  <form class="row g-2 needs-validation align-items-center" action="{{route('datos')}}" method="post">
                      @csrf
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
                           <input type="text" class="form-control" id="lastname" name="nombre" placeholder="Nombre" autocomplete="off" required>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="input-group has-validation">
+                          <span class="input-group-text"><i class="bi bi-caret-down-square-fill"></i></span>
+                            <select id="genero" name="genero" class="form-control">
+                              <option selected>Genero ...</option>
+                              <option value="male">Masculino</option>
+                              <option value="female">Femenino</option>
+                              <option value="nb">No binario</option>
+                            </select>
                         </div>
                       </div>
                       <div class="col-md-12">
@@ -93,7 +117,7 @@
                       <div class="col-md-12">
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                          <input type="text" class="form-control" id="correo" name="correo" placeholder="correo@example.com"  autocomplete="off" required>
+                          <input type="email" class="form-control" id="correo" name="correo" placeholder="correo@example.com"  autocomplete="off" required>
                         </div>
                       </div>
                       <div class="col-md-12">
@@ -215,6 +239,17 @@
                         <div class="input-group has-validation">
                           <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
                           <input type="text" class="form-control" id="lastname" name="nombre" placeholder="Nombre"  autocomplete="off" required>
+                        </div>
+                      </div>
+                       <div class="col-md-12">
+                        <div class="input-group has-validation">
+                          <span class="input-group-text"><i class="bi bi-caret-down-square-fill"></i></span>
+                            <select id="genero" name="genero" class="form-control">
+                              <option selected>Genero ...</option>
+                              <option value="male">Masculino</option>
+                              <option value="female">Femenino</option>
+                              <option value="nb">No binario</option>
+                            </select>
                         </div>
                       </div>
                       <div class="col-lg-12">

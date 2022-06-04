@@ -202,7 +202,8 @@
                             <br>
                             <div style="line-height: 35px">
                              <p style="text-align: justify; font-size: 20px;">Próximamente te estaremos informando los pasos para que crees tu avatar e instales los accesos al metaverso y de esta manera tengas todo listo para el evento.</p>
-                                <img style='display:block;margin-left: auto; margin-right: auto;' src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/bienvenida.jpg')}}"/>
+                             <br>
+                                <img style="display:block;margin-left: auto; margin-right: auto; height: 700px; width: 600px;"  src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/bienvenida.jpg')}}"/>
                             </div>
                         </td>
                     </tr>
