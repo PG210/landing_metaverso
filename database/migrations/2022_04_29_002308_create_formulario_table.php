@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('cargo',100);
             $table->string('correo',200);
             $table->string('telefono',100);
+            $table->string('estado',50)->nullable();
             $table->timestamps();
         });
     }

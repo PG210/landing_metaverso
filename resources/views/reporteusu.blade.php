@@ -29,6 +29,16 @@
             </thead>
             <tbody>
               <?php
+                $current_page = $usu['result']['api-user-list']['current-page'];
+                $total_pages = $usu['result']['api-user-list']['pages'];
+                do{
+                 $rs = count($usu['result']['api-user-list']['current-page'][$current_page]);
+                  
+                  //total_pages = rs.total_pages
+                  echo $rs;
+                  $current_page++;
+                } while ($current_page < $total_pages);
+
                     $var = count($usu['result']['api-user-list']['items']);
                         $con=1;
                         for($i=0;$i<$var;$i++) {
@@ -52,7 +62,6 @@
             </tbody>
             </table>
             </div>
-        
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

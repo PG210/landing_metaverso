@@ -63,25 +63,17 @@
                 <div class="container-fluid">
                 <div class="container align-items-center">
                     <h1 class="text-white font-weight-bold"><font color="#eba506" id="titulo" size="6">INSCRIBETE</font></h1>
-                    @if($m==1)
-                      <div class="alert alert-dismissible fade show" role="alert" style="background-color:#FFFC33;">
-                        <strong>&nbsp;Usuario ya se encuentra registrado</strong> 
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div>
-                    @endif
-                    @if($var!=0)
-                      @if(isset($var['error']['code']))
+                    @if(Session::has('regdup'))
                         <div class="alert alert-dismissible fade show" role="alert" style="background-color:#FFFC33;">
-                        <strong>&nbsp;Usuario ya se encuentra registrado</strong> 
+                        <strong>&nbsp;{{Session::get('regdup')}}</strong> 
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
-                      @endif
-                      @if(isset($var['result']))
-                          <div class="alert alert-dismissible fade show" role="alert" style="background-color:#66efa5;">
-                          <strong>&nbsp;Usuario registrado con éxito</strong> 
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                          </div>
-                      @endif
+                    @endif
+                    @if(Session::has('regex'))
+                        <div class="alert alert-dismissible fade show" role="alert"  style="background-color:#66efa5;">
+                        <strong>&nbsp;{{Session::get('regex')}}</strong> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
                     @endif
                   <form class="row g-2 needs-validation align-items-center" action="{{route('datos')}}" method="post">
                      @csrf

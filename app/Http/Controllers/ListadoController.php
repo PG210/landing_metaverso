@@ -15,10 +15,10 @@ class ListadoController extends Controller
             'auth-key'=> 'c3d9aa-f2d855468f39-1367379a8f5a5452ec14',
             'language'=>'es',
             'api-user-list'=> [
-            'limit'=> 100,
+            'limit'=> 300,
             'page'=>$request->pag,
             'user-profile'=> 'complete',
-            'user-groups'=>[$request->grupo],
+            //'user-groups'=>[$request->grupo],
             ]
            ]);
            $usu = $response->json();

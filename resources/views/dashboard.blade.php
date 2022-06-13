@@ -111,10 +111,10 @@
                     <!--formulario de registro-->
                      
                           <div class="mb-3">
-                            <input type="text" class="form-control" id="cod" name="cod" aria-describedby="emailHelp" placeholder="Código">
+                            <input type="text" class="form-control" id="cod" name="cod" aria-describedby="emailHelp" placeholder="Código" required>
                           </div>
                           <div class="mb-3">
-                            <input type="text" class="form-control" id="des" name="des" placeholder="Descripción">
+                            <input type="text" class="form-control" id="des" name="des" placeholder="Descripción" required>
                           </div>
             
                     <!--end form -->
@@ -151,10 +151,10 @@
                      <!--formulario de registro-->
                      
                           <div class="mb-3">
-                            <input type="text" class="form-control" id="cod" name="cod" aria-describedby="emailHelp" placeholder="Código">
+                            <input type="text" class="form-control" id="cod" name="cod" aria-describedby="emailHelp" placeholder="Código" required>
                           </div>
                           <div class="mb-3">
-                            <input type="text" class="form-control" id="des" name="des" placeholder="Descripción">
+                            <input type="text" class="form-control" id="des" name="des" placeholder="Descripción" required>
                           </div>
             
                     <!--end form -->
