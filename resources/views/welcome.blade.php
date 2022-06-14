@@ -24,45 +24,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
     </head>
     <body id="page-top">
-        <div >
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: white">
-                <div class="container px-2 px-lg-2">
-                    <a class="navbar-brand" href="https://www.evolucion.co/">
-                       
-                          <img  class="figure-img img-fluid rounded" src="{{ asset('dist/assets/img/portfolio/logob.png')}}" alt="..." />
-      
-                      </a>
-                    <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    -->
-                </div>
-            </nav>
-        </div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: white">
+          <div class="container px-2 px-lg-2">
+              <a class="navbar-brand" href="https://www.evolucion.co/">
+                  
+                    <img  class="figure-img img-fluid rounded" src="{{ asset('dist/assets/img/portfolio/logob.png')}}" alt="..." />
+
+                </a>
+              <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              -->
+          </div>
+      </nav>
         <!-- Navigation-->
-       
         <!-- Masthead-->
-        <header class="masthead" style="padding-top: 2em;">
-            <!---#######################text-start-->
-            <div class="container-fluid" style="margin-top:8%;">
-            <div class="row" style="padding-top: 2em;">
-                <div class="col-lg-7">
-                    <div class="container-fluid">
-                        <div class="align-items-center">
-                            <div class="container">
-                                <br><br>
-                                <h1 class="font-weight-bold text-start"  ><font color="#66efa5" id="titulo">¿Un METAVERSO en mi organización?</font></h1>
-                            </div>
-                            <br>
-                            <div class="container align-self-baseline  text-start">
-                              <br>
-                                <p class="text-white-75 mb-5" id="titulo" style="font-family: Open Sans; font-size: 250%;">Todo lo que necesita saber sobre los <b>Metaversos Empresariales</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                <div class="container-fluid">
-                <div class="container align-items-center">
-                    <h1 class="text-white font-weight-bold"><font color="#eba506" id="titulo" size="6">INSCRIBETE</font></h1>
+        <br><br><br>
+        <img src="{{asset('dist/assets/img/meta.jpeg')}}" class="img-fluid" alt="..." width="100%" >
+          <!-- Services-->
+           <div class=" masthead">
+            <div class="row"  style="padding-top:3rem; padding-bottom:20px; padding-left:4rem;">
+              <div class="col-md-7">
+                <!---contenedor lado izquierdo-->
+                <div class="container">
+                  <div class="col-auto p-2 text-justify">
+                    <h2  style="color:#eba506;"><fonts id="titulo">NUEVAS CULTURAS DE TRABAJO</fonts></h2><br>
+                    <h1 class="font-weight-bold"  style="color:#eba506;"><fonts  id="titulo" size="6"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;Jueves 30 De Junio</fonts></h1><br>
+                    <h1 class="font-weight-bold"  style="color:#eba506;"><fonts  id="titulo" size="6"><i class="bi bi-alarm"></i>&nbsp;&nbsp;6 p.m. a 7:30 p.m.</fonts></h1>
+                  </div>
+               </div>
+                <!--end contenedor-->
+              </div>
+              <div class="col-md-5">
+                   <!--formulario-->
+                   <div class="container">
+                   <h1 class="font-weight-bold"  style="color:#eba506;"><fonts id="titulo" size="6">INSCRIBETE</fonts></h1><!-- color="#4b42bf"-->
                     @if(Session::has('regdup'))
                         <div class="alert alert-dismissible fade show" role="alert" style="background-color:#FFFC33;">
                         <strong>&nbsp;{{Session::get('regdup')}}</strong> 
@@ -75,7 +69,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                  <form class="row g-2 needs-validation align-items-center" action="{{route('datos')}}" method="post">
+                   <form class="row g-2 needs-validation" action="{{route('datos')}}" method="post">
                      @csrf
                       <div class="col-md-12">
                         <div class="input-group has-validation">
@@ -122,27 +116,111 @@
                         <button class="btn btn-warning float-end" type="submit" style="color:#4b42bf">Enviar</button>
                       </div>
                     </form>
-                   </div>
-                  </div>
-               </div>
-               
+                    </div>
+                   <!--end formulario-->
+              </div>
+            </div>
            </div>
-            <!---#############################-->
-            <br>
+        <!-- expositores 1-->
+        <section class="page-section" id="services">
+            <div class="col-auto p-2 text-center" style="background-color: #eba506">
+                <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6"><i class="bi bi-people-fill"></i>&nbsp;&nbsp;Invitados Especiales</font></h1>
+            </div>
+        </section>
+        <!--cards-->
+        <div style="margin:25px 40px 75px 40px;">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="col-lg-5" style="padding:5px 5px 5px 5px;">
+              <img class="img-fluid rounded-circle card-img-top" src=" {{ asset('dist/assets/img/portfolio/Alexandra.jpeg')}}" alt="..." />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title font-weight-bold" style="color:#4b42bf; size:6px;" id="titulo">Alexandra Valencia</h3>
+                <p class="card-text">
+                  <!--descripcion-->
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                    Psicóloga.
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                    Magister en Gerencia del Talento Humano.
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                  Especialista en Gerencia de la Información.
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                  Especialista en Formación para Organizaciones del sector público.
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                  Coach Ejecutivo.
+                  </b></h6>
+                  <!--end descripcion-->
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><h6>Gobernación De Antioquia</h6></small>
+              </div>
+            </div>
           </div>
-        </header>
-        <!--##############################-->
+          <div class="col">
+            <div class="card h-100">
+              <div class="col-lg-5" style="padding:5px 5px 5px 5px;">
+               <img class="img-fluid rounded-circle card-img-top" src="{{ asset('dist/assets/img/portfolio/Sara.jpeg')}}" alt="..." />
+              </div>
+              <div class="card-body">
+              <h3 class="card-title font-weight-bold" style="color:#4b42bf; size:6px;" id="titulo">Sara Medina</h3>
+                <p class="card-text">
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                    Psicóloga.
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                  Especialista en gestión humana.
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                  Experiencia en todos los subprocesos del área de Gestión Humana.
+                  </b></h6>
+                </p>
+              </div>
+               <div class="card-footer">
+                <small class="text-muted"><h6>Kometsales</h6></small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="col-lg-5" style="padding:5px 5px 5px 5px;">
+                  <img class="img-fluid rounded-circle" src=" {{ asset('dist/assets/img/portfolio/LuzMaria.jpeg')}}" alt="..." />
+              </div> 
+              <div class="card-body">
+                <h3 class="card-title font-weight-bold" style="color:#4b42bf; size:6px;" id="titulo">Luz María Montoya</h3>
+                <p class="card-text">
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                  Profesional en áreas sociales y administrativas
+                  </b></h6>
+                  <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>
+                    Desempeña cargos de Gerencia Administrativa y del Talento Humano hace más de 20 años</b></h6>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><h6>Centro Aceros</h6></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--end cards-->
+        <!--end expositorios-->
          <!-- Content section 2-->
          <section id="about">
             <div class="container px-2">
                 <div class="row gx-0 align-items-center">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" >
                         <img class="img-fluid rounded-circle" src=" {{ asset('dist/assets/img/portfolio/landin_meta_05.jpg')}}" alt="..." />
                     </div>                                                               
                     <div class="col-lg-7">
                            <br><br>
                            <div class="container-flex" style="padding-left:1em; padding-right:1em;">
-                            <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6">Facilitador:</font></h1>
+                            <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6">MODERADOR DEL FORO EN EL METAVERSO</font></h1>
                             <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6">Manuel Castrillón</font></h1>
                             <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>MBA (Maestría Administración de Empresas)</b></h6>
                             <h6 style="font-family: Open Sans; font-size: 113%; text-align:justify; color:#7A7A78;"><b>Especialista en Mercadeo y Gamificación</b></h6>
@@ -161,16 +239,8 @@
         </section>
         <!-- Content section 3-->
         <!--##############################-->
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="col-auto p-2 text-center" style="background-color: #eba506">
-                <h1 class="text-white font-weight-bold" ><font color="#4b42bf" id="titulo" size="6"><i class="bi bi-calendar-check"></i> Mayo 18 / 8 a.m. a 10 a.m.</font></h1>
-                <h5><font color="#4b42bf" id="titulo">ENTRADA GRATUITA - DENTRO DE UN METAVERSO</font></h5>
-            </div>
-        </section>
-        <!-- Portfolio-->
+        <!--
         <div class="container col-auto p-2 text-center">
-          <!---pantallas grandes-->
           <div class="container d-none d-sm-none d-md-block" style="padding-left: 5em; padding-right: 5em;">
               <div class="video-responsive">
                 <iframe width="560" height="315" 
@@ -183,7 +253,6 @@
             </div>
             <br><br><br>
          </div>
-         <!---pantallas pequeñas-->
          <div class="container d-sm-block d-block d-sm-block d-md-none">
               <div class="video-responsive">
                 <iframe width="400" height="200"  style="padding-top: 3em; padding-bottom: 3em;"
@@ -194,10 +263,10 @@
                     allowfullscreen>
                 </iframe>
             </div>
-         </div>
+         </div>-->
          <!--end pantallas pequeñas-->
-            <div class="row">
-                <div class="col-lg-8">
+         <!--   <div class="row">-->
+               <!-- <div class="col-lg-8">
                     <div class="container px-4 px-lg-5 h-100">
                         <div class="text-start">
                           <br>
@@ -219,8 +288,9 @@
                             <br>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
+                </div>-->
+                <!--
+                <div class="col-lg-6">
                 <div class="container">
                      
                   <br>
@@ -278,7 +348,7 @@
                   </div>
 
            </div>
-        </div>
+        </div>-->
         <!-----imagen para celulares-->
         <div class="container">
         <div class="align-self-baseline d-sm-block d-block d-sm-block d-md-none">

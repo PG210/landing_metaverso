@@ -11389,18 +11389,32 @@ hr.divider-light {
   }
 }
 
-header.masthead {
-  padding-top: 0;
+.masthead {
   padding-bottom: calc(10rem - 4.5rem);
   background: url("../assets/img/fondo.jpg");
  /* background-position: center;*/
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-attachment: fixed;
   background-size: cover;
  /*background-size: 100% 100%;*/
 
 }
+.portada{
+  background: url("../assets/img/meta.jpeg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+
+}
+.imgmeta {
+  background-image: url("../assets/img/meta.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
