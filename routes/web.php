@@ -19,7 +19,7 @@ Route::get('/', [PersonasController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::post('/registro/inscripcion', [PersonasController::class, 'info'])->name('datos');
 Route::get('/registro/inscripcion/descargar', [PersonasController::class, 'exportExcel'])->name('descarga');
@@ -39,4 +39,12 @@ Route::get('/cambiar/estado/rol/{id}', [ListadoController::class, 'cambiarrol'])
 Route::get('/eliminar/grupo/{id}', [ListadoController::class, 'eliminargrupo']);
 Route::get('/eliminar/rol/{id}', [ListadoController::class, 'eliminarrol']);
 
+// E-mail verification
+Route::get('/register/verify/{code}', [PersonasController::class, 'verify']);
+
+Route::get('/confi', [PersonasController::class, 'confi']);
+
+Route::get('/correo', function () {
+    return view('emails.nuevo-usuario');
+});
 require __DIR__.'/auth.php';

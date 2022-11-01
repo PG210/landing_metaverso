@@ -150,7 +150,7 @@
 
 <body class="respond" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
     <!-- header -->
-    <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="ffffff">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0">
 
         <tr>
             <td align="center">
@@ -181,7 +181,7 @@
     <!-- end header -->
 
     <!-- big image section -->
-    <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="ffffff" class="bg_color">
+    <table border="0" width="98%"  bgcolor="ffffff" class="bg_color">
 
         <tr>
             <td align="center">
@@ -192,18 +192,25 @@
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="color: #343434; font-size: 24px; font-family: Open Sans, sans-serif; letter-spacing: 3px; line-height: 35px;" class="main-header">
+                        <td style="color: #343434; font-size: 24px; font-family: Open Sans, sans-serif; letter-spacing: 3px; line-height: 35px;" class="main-header">
 
                             <div style="line-height: 35px">
-
-                            GRACIAS POR INSCRIBIRTE al evento <span style="color:#1ED5F4;">¿Un Metaverso en mi organización?</span>
-
+                               <h3 style="color:#1ED5F4;">¡Gracias por inscribirte a nuestro METATALKS!</h3>
                             </div>
                             <br>
                             <div style="line-height: 35px">
-                             <p style="text-align: justify; font-size: 20px;">Próximamente te estaremos informando los pasos para que crees tu avatar e instales los accesos al metaverso y de esta manera tengas todo listo para el evento.</p>
+                            <img style="display:block; margin-left: auto; margin-right: auto; height: 50%; width: 100%;"  src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/meta.jpeg')}}"/><br>
+                             <p style="text-align: justify; font-size: 20px;">
+                              Para poder ingresar a nuestro METAVERSO descarga el <a href="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/Guia_descarga_metaversos.pdf')}}" >PDF</a> y sigue los pasos para instalar el aplicativo.
+                             </p><br>
+                             <p style="text-align: justify; font-size: 20px;">
+                             Hazlo cuanto antes, de esta manera podrás disfrutar de la experiencia en el METAVERSO.
+                             </p><br>
+                             <p style="text-align: justify; font-size: 20px;">
+                              <span style="color:#1ED5F4;">Tu usuario es: </span> tu correo electronico<br>
+                             <span style="color:#1ED5F4;">Tu password es: </span> METAVERSOS2022
+                             </p>
                              <br>
-                                <img style="display:block;margin-left: auto; margin-right: auto; height: 700px; width: 600px;"  src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/portfolio/bienvenida.jpg')}}"/>
                             </div>
                         </td>
                     </tr>
@@ -213,7 +220,7 @@
                     </tr>
 
                     <tr>
-                        <td align="center">
+                        <td>
                             <table border="0" width="40" align="center" cellpadding="0" cellspacing="0" bgcolor="eeeeee">
                                 <tr>
                                     <td height="2" style="font-size: 2px; line-height: 2px;">&nbsp;</td>
@@ -241,21 +248,21 @@
                     </tr>
 
                     <tr>
-                        <td height="25" style="font-size: 20px; line-height: 25px;">
-                        Fecha: 18 de mayo <br>
-                        Hora: 8 Am - 10 AM <br><br>
-                        <p style="text-align: center;">Reserva ese espacio desde YA !</p><br> 
-                       </td>
+                        <td style="color: #343434; font-size: 20px; font-family: Open Sans, sans-serif; letter-spacing: 3px; line-height: 35px;" class="main-header">
+                        Fecha: MIÉRCOLES 5 DE OCTUBRE <br> 
+                        Hora: 8:00 AM HORA DE COLOMBIA <br>
+                        Tema: ReconoSER<br>
+                        Descripción: La historia de nuestro programa de reconocimiento y sus impactos.
+                        <br><br>
+                        <p style="text-align: justify;">Reserva este espacio en tu calendario y cualquier duda puedes contactarte con nuestro equipo de soporte: <a href="mailto:soporte@evolucion.co?Subject=Ayuda%20Evento%20MetaTalks" style="color:#1ED5F4;">soporte@evolucion.co</a></p><br> 
+                    </td>
                     </tr>
 
                     <tr>
                         <td align="center">
 
-
+                        <a href="https://www.evolucion.co/"><img style="display:block; margin-left: auto; margin-right: auto; height: 50%; width: 100%;"  src="{{ asset('https://www.eventosmetaversos.evolucion.co/dist/assets/img/evolucion.png')}}"/></a><br>
                             &nbsp;
-
-
-
                         </td>
                     </tr>
 
@@ -269,73 +276,5 @@
     <!-- end section -->
 
     <!-- contact section -->
-    <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="ffffff" class="bg_color">
-
-        <tr class="hide">
-        </tr>
-        <tr>
-            <hr>
-        </tr>
-        <tr>
-            <td align="center">
-                <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590 bg_color">
-
-                    <tr>
-                        <td>
-                            <table border="0" width="300" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
-
-                                <tr>
-                                    <!-- logo -->
-                                    <td align="left">
-                                        <a href="#" style="display: block; border-style: none !important; border: 0 !important;"><img width="80" border="0" style="display: block; width: 80px;" src="{{url('logo.png')}}" alt="" /></a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td height="25" style="font-size: 25px; line-height: 25px;">&nbsp;</td>
-                                </tr>
-
-                                <tr>
-                                    <td align="left" style="color: #888888; font-size: 14px; font-family: 'Work Sans', Calibri, sans-serif; line-height: 23px;" class="text_color">
-                                        <div style="color: #333333; font-size: 14px; font-family: 'Work Sans', Calibri, sans-serif; font-weight: 600; mso-line-height-rule: exactly; line-height: 23px;">
-
-                                            Nuestro email: <br/> <a href="https://www.evolucion.co/contactanos/" style="color: #888888; font-size: 14px; font-family: 'Hind Siliguri', Calibri, Sans-serif; font-weight: 400;">info@evolucion.co</a>
-
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </table>
-
-                            <table border="0" width="2" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
-                                <tr>
-                                    <td width="2" height="10" style="font-size: 10px; line-height: 10px;"></td>
-                                </tr>
-                            </table>
-
-                            <table border="0" width="200" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
-
-                                <tr>
-                                    <td class="hide" height="45" style="font-size: 45px; line-height: 45px;">&nbsp;</td>
-                                </tr>
-
-
-
-                                <tr>
-                                    <td height="15" style="font-size: 15px; line-height: 15px;">&nbsp;</td>
-                                </tr>
-
-                                
-
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <td height="60" style="font-size: 60px; line-height: 60px;">&nbsp;</td>
-        </tr>
-
-    </table>
+    </body>
+    </html>

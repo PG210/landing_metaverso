@@ -18,7 +18,7 @@ class ListadoController extends Controller
             'limit'=> 300,
             'page'=>$request->pag,
             'user-profile'=> 'complete',
-            //'user-groups'=>[$request->grupo],
+            'user-groups'=>[$request->grupo],
             ]
            ]);
            $usu = $response->json();

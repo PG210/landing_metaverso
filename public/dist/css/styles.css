@@ -11390,8 +11390,9 @@ hr.divider-light {
 }
 
 .masthead {
-  padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/img/fondo.jpg");
+  padding-bottom: calc(7rem - 4.5rem);
+  /*background: url("../assets/img/fondo.jpg");*/
+  background-color:#BA018A;
  /* background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;

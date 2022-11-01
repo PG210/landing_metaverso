@@ -11,7 +11,7 @@ class Mensaje extends Mailable
 {
     use Queueable, SerializesModels;
     
-    public $subjet="Información de contacto";
+    public $subject="Información de contacto";
     /**
      * Create a new message instance.
      *

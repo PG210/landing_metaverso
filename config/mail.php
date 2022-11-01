@@ -92,7 +92,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'metaverso.evolucion@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Evolución'),
+        'name' => env('MAIL_FROM_NAME', 'MetaTalks'),
     ],
 
     /*
